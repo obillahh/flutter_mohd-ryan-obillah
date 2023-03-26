@@ -13,4 +13,3 @@ Persistent Bottom Sheet: Persistent Bottom Sheet adalah komponen yang dapat dita
 ## Modal Bottom Sheet
 
 Modal Bottom Sheet adalah tampilan dialog sementara yang muncul dari bawah layar utama aplikasi. Komponen ini biasanya digunakan untuk menampilkan form atau widget tertentu yang perlu diisi oleh pengguna sebelum melanjutkan ke halaman selanjutnya.
-
