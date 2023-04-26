@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project/models/profile_model.dart';
 import 'package:project/theme/app_fonts.dart';
-
-import '../profile_page.dart';
+import 'package:project/views/widgets/alert_custom.dart';
 
 class FormCustom extends StatefulWidget {
   const FormCustom({super.key});
@@ -102,11 +101,20 @@ class _FormCustomState extends State<FormCustom> {
                   ),
                 )),
             onPressed: () {
-              dataProfile();
-              Navigator.pushNamed(
-                context,
-                ProfilePage.nameRoute,
-                arguments: yourProfile,
+              // dataProfile();
+              // Navigator.pushNamed(
+              //   context,
+              //   ProfilePage.nameRoute,
+              //   arguments: yourProfile,
+              // );
+              showDialog(
+                context: context,
+                builder: (context) => AlertCustom(
+                  firstname: _firstNameController.text,
+                  lastname: _lastNameController.text,
+                  email: _emailController.text,
+                  address: _addressController.text,
+                ),
               );
             },
             child: Text('Send', style: AppFont.primaryFont.bodyLarge),
