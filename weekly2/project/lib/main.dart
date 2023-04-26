@@ -27,9 +27,9 @@ class MyApp extends StatelessWidget {
         ),
         primaryTextTheme: AppFont.primaryFont,
       ),
-      home: const HomePage(),
       initialRoute: HomePage.nameRoute,
       routes: {
+        HomePage.nameRoute: (context) => const HomePage(),
         ProfilePage.nameRoute: (context) => const ProfilePage(),
       },
     );

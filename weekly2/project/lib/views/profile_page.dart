@@ -99,6 +99,40 @@ class ProfilePage extends StatelessWidget {
                 fit: BoxFit.fill,
               ),
             ),
+            GridTile(
+              footer: GridTileBar(
+                backgroundColor: AppColor.primaryColor,
+                title: Text(
+                  'Mechanic',
+                  style: AppFont.primaryFont.headlineSmall,
+                ),
+                subtitle: Text(
+                  "Technology is the application of knowledge for achieving practical goals in a reproducible way.",
+                  style: AppFont.primaryFont.bodySmall,
+                ),
+              ),
+              child: Image.network(
+                'https://picsum.photos/id/252/500/400',
+                fit: BoxFit.fill,
+              ),
+            ),
+            GridTile(
+              footer: GridTileBar(
+                backgroundColor: AppColor.primaryColor,
+                title: Text(
+                  'Cashier',
+                  style: AppFont.primaryFont.headlineSmall,
+                ),
+                subtitle: Text(
+                  "Technology is the application of knowledge for achieving practical goals in a reproducible way.",
+                  style: AppFont.primaryFont.bodySmall,
+                ),
+              ),
+              child: Image.network(
+                'https://picsum.photos/id/486/500/400',
+                fit: BoxFit.fill,
+              ),
+            ),
           ],
         ),
       ],
